@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="shortcut icon" href="./image/WhatsApp Image 2026-10-24 at 09.15.38.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar bg-1 fg-2">
+                <div class="header-content">
+
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./image/WhatsApp Image 2026-10-24 at 09.15.38.jpeg" alt="Logo">
+                    </a>
+
+                    <form class="search-form" role="search">
+                        <input class="form-control" type="search" placeholder="Product Name">
+                        <button class="btn btn-success" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <button class="cart-btn" type="button">
+                        <i class="bi bi-cart3"></i>
+                        <span>Cart</span>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <div class="language-box">
+                        <i class="bi bi-globe2"></i>
+
+                        <select class="language-select" aria-label="Select language">
+                            <option value="en">English</option>
+                            <option value="bn">বাংলা</option>
+                        </select>
+
+                    </div>
+                    <!-- Login Button -->
+                    <a href="./login.html" class="login-btn">
+                        <i class="bi bi-person"></i>
+                        <span>Login</span>
+                    </a>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Section End -->
+
+
+    <!-- Menu Section -->
+    <main>
+        <section class="menu">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav-list">
+
+                        <!-- Woman Dropdown -->
+
+                        <li class="dropdown">
+                            <a href="./index.html">HOME</a>
+                            <ul class="dropdown-menu">
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#">WOMAN</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">Kurti</a></li>
+                                <li><a href="#">Three Piece</a></li>
+                                <li><a href="#">Western Wear</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Man Dropdown -->
+                        <li class="dropdown">
+                            <a href="#">MAN</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Shirt</a></li>
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Panjabi</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Kids Dropdown -->
+                        <li class="dropdown">
+                            <a href="#">KID'S</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Boys Clothing</a></li>
+                                <li><a href="#">Girls Clothing</a></li>
+                                <li><a href="#">Kids Shoes</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">HOME DECOR</a></li>
+                        <li><a href="#">JEWELLERY</a></li>
+                        <li><a href="#">SKIN & HAIR</a></li>
+                        <li><a href="#">GIFTS & CRAFTS</a></li>
+                        <li><a href="#">WEDDING</a></li>
+                        <li><a href="#">OTHER'S</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- menu bar Section End -->
+
+        <!-- Product Details Start -->
+        <section class="product-details">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Product Image -->
+                    <div class="col-lg-5">
+                        <div class="product-image-box">
+                            <img src="./image/01.avif" alt="Product Image" id="mainProductImage">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <h4>Royal Cafe Classic Coffee 200g | Premium Instant Coffee | Rich Aroma & Strong Taste</h4>
+                        <p>Brand:Royal CafeMore Beverages from Royal Cafe</p>
+                        <h3>760</h3>
+                        <!-- Quantity Start -->
+                        <div class="quantity-group">
+                            <label for="quantity">Quantity:</label>
+
+                            <div class="quantity-control">
+                                <button type="button" id="minusBtn">−</button>
+
+                                <input type="number" id="quantity" name="quantity" value="1">
+
+                                <button type="button" id="plusBtn">+</button>
+                            </div>
+                        </div>
+                        <!-- Quantity End -->
+                        <!-- Product Buttons Start -->
+                        <div class="product-buttons">
+
+                            <button type="button" class="add-cart-btn">
+                                <i class="bi bi-cart-plus"></i>
+                                Add to Cart
+                            </button>
+
+                            <button type="button" class="buy-now-btn">
+                                <i class="bi bi-bag-check"></i>
+                                Buy Now
+                            </button>
+
+                        </div>
+                        <!-- Product Buttons End -->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Product Details End -->
+
+
+
+
+    </main>
+
+<script src="./js/app.js"></script>
+
+</body>
+
+</html>
